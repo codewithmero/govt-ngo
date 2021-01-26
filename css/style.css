@@ -51,6 +51,12 @@ a {
 
 
 /* Typography */
+
+.heading {
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
 .hero-content .title {
   font-size: 3rem;
 }
@@ -114,7 +120,7 @@ a {
 
   }
 
-    p {
+    .logo__text {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -184,7 +190,7 @@ a {
       height: 4.5rem;
     }
 
-      p {
+      .logo__text {
         font-size: 1rem;
       }
 
@@ -206,3 +212,55 @@ a {
   }
 }
     
+
+/* About Section */
+
+.home-about-textbox {
+  background-color: #272727;
+  padding: 3rem;
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: -2rem;
+
+  position: relative;
+}
+
+  .home-about-textbox h1 {
+    padding: 0 .3rem;
+    color: var(--color-primary-light);
+    text-align: center;
+    width: 10rem;
+
+    position: absolute;
+    top: 0.7rem;
+    left: 50%;
+    transform: translate(-50%);
+    background: #272727;
+  } 
+
+  .home-about-textbox p {
+    padding: 0.5rem 0;
+    color: var(--color-white);
+    text-align: justify;
+  }
+
+  /* Media Queries - About */
+  @media (min-width: 400px) {
+    .heading {
+      font-size: 2rem;
+    }
+
+    .home-about-textbox h1 {
+      width: 13rem;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .heading {
+      font-size: 2.5rem;
+    }
+
+    .home-about-textbox h1 {
+      width: 16rem;
+      top: 0.4rem;
+    }
+  }
