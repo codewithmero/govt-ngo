@@ -3,6 +3,9 @@
   --color-primary-light: #00ffc6;
   --color-secondary: #474747;
   --color-white: #fff;
+
+  --color-gradient-one: #AAFFA9;
+  --color-gradient-two: #11FFBD;
 }
 
 *, *::after, *::before {
@@ -134,7 +137,7 @@ a {
 /* Banner */
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(27, 26, 26, 0.75),rgba(27, 26, 26, 0.75)),
+  background-image: linear-gradient(to right, rgba(26, 27, 27, 0.7),rgba(26, 27, 27, 0.7)),
                     url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -217,7 +220,7 @@ a {
 
 .home-about-textbox {
   background-color: #272727;
-  padding: 3rem;
+  padding: 3.5rem;
   outline: 2px solid var(--color-primary-light);
   outline-offset: -2rem;
 
@@ -225,7 +228,6 @@ a {
 }
 
   .home-about-textbox h1 {
-    padding: 0 .3rem;
     color: var(--color-primary-light);
     text-align: center;
     width: 10rem;
@@ -262,5 +264,71 @@ a {
     .home-about-textbox h1 {
       width: 16rem;
       top: 0.4rem;
+    }
+  }
+
+  @media(min-width: 960px) {
+
+    
+    .heading {
+      font-size: 1.6rem;
+    }
+
+    .home-about-textbox h1 {
+      width: 10rem;
+      top: 2.1rem;
+    }
+    
+    .home-about-container {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-image: linear-gradient(to right, rgba(170, 255, 169, .5), rgba(17, 255, 189, .5)),
+                        url(../img/pattern.jpg);
+
+      width: 95%;
+      max-width: 960px;
+      margin: 0 auto;
+
+      /* border-bottom: solid 0.5rem var(--color-secondary); */
+    }
+    
+    .home-about-textbox {
+      width: 45%;
+      padding: 4.8rem;
+      outline-offset: -3.2rem;
+      box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .3);
+    }
+
+    .pos-1 {
+      top: -5.4rem;
+      left: -1.3rem;
+    }
+
+    .pos-2 {
+      top: -5.4rem;
+      right: -34.3rem;
+    }
+
+    .pos-3 {
+      top: -5.4rem;
+      left: -1.3rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .pos-1 {
+      top: -5.4rem;
+      left: -5.4rem;
+    }
+
+    .pos-2 {
+      top: -5.4rem;
+      right: -38.5rem;
+    }
+
+    .pos-3 {
+      top: -5.4rem;
+      left: -5.4rem;
     }
   }
