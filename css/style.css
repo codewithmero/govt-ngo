@@ -3,9 +3,6 @@
   --color-primary-light: #00ffc6;
   --color-secondary: #474747;
   --color-white: #fff;
-
-  --color-gradient-one: #AAFFA9;
-  --color-gradient-two: #11FFBD;
 }
 
 *, *::after, *::before {
@@ -49,6 +46,31 @@ a {
 
   .u-margin-bottom-big {
     margin-bottom: 6rem;
+  }
+
+  /* text-align */
+  .left-align {
+    text-align: left;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+
+  .center-align {
+    text-align: center;
+  }
+
+  .justify-align {
+    text-align: justify;
+  }
+
+  .break {
+    display: block;
+  }
+
+  .banner {
+    padding: 3rem;
   }
 
 
@@ -214,9 +236,30 @@ a {
     padding: 1rem 1.5rem;
   }
 }
-    
+  
+
+/* Overview Section */
+.home-overview h1 {
+  font-size: 3rem;
+  color: #373737;
+}
+
+.home-overview p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: #999999;
+}
+
 
 /* About Section */
+
+.home-about-banner {
+  width: 100%;
+  padding: 2rem 0;
+  margin: 0 auto;
+
+  font-size: 3rem;
+}
 
 .home-about-textbox {
   background-color: #272727;
@@ -279,18 +322,25 @@ a {
       top: 2.1rem;
     }
     
+    .home-about-banner {
+      width: 95%;
+      max-width: 960px;
+      padding: 2rem 0;
+      margin: 0 auto;
+
+      font-size: 3rem;
+    }
+
     .home-about-container {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; 
-      background-image: linear-gradient(to right, rgba(170, 255, 169, .5), rgba(17, 255, 189, .5)),
-                        url(../img/pattern.jpg);
+      background-size: cover;
+      background-position: right;
+      padding-bottom: 10rem;
 
       width: 95%;
       max-width: 960px;
       margin: 0 auto;
-
-      /* border-bottom: solid 0.5rem var(--color-secondary); */
     }
     
     .home-about-textbox {
@@ -300,19 +350,22 @@ a {
       box-shadow: 0 0 3rem 0 rgba(0, 0, 0, .3);
     }
 
+    .container-1 {
+      background-image: url(../img/about-cover.jpg);
+    }
+
     .pos-1 {
       top: -5.4rem;
       left: -1.3rem;
     }
 
+    .container-2 {
+      background-image: url(../img/about-cover-2.jpg);
+    }
+
     .pos-2 {
       top: -5.4rem;
       right: -34.3rem;
-    }
-
-    .pos-3 {
-      top: -5.4rem;
-      left: -1.3rem;
     }
   }
 
@@ -332,3 +385,6 @@ a {
       left: -5.4rem;
     }
   }
+
+
+/* Navigation */
